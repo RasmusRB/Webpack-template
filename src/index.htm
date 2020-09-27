@@ -12,15 +12,18 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-  <title>Hello app</title>
+  <title>String Manipulations</title>
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <h1>String Manipulations</h1>
   <div id="app">
-    <input v-model="name" placeholder="Name">
-    <button v-on:click="sayHello()" class="btn btn-primary">Say hello</button>
-    <div>{{ greeting }}</div>
+    <input v-model="inputString" placeholder="Enter text">
+    <button v-on:click="toUpper()" class="btn btn-primary">To Upper Case</button>
+    <button v-on:click="toLower()" class="btn btn-primary">To Lower Case</button>
+    <button v-on:click="stringLength()" class="btn btn-primary">Length</button>
+    <button v-on:click="clear()" class="btn btn-primary">Clear</button>
+  <div>{{outputString}}</div>
   </div>
 
   <script src="bundle.js"></script>
